@@ -1,0 +1,33 @@
+.dark {
+  background-color: #222;
+  color: white;
+  transition: color background-color 0.2s linear;
+}
+.dark-row:nth-child(even) {
+  background-color: #333;
+  transition: background-color 0.2s linear;
+}
+.dark-row:nth-child(odd) {
+  background-color: #222;
+  transition: background-color 0.2s linear;
+}
+
+.dark-paginator {
+  color: white !important;
+  transition: color 0.2s linear;
+}
+@media (min-width: 48em) {
+  .responsive-table tbody tr:nth-last-of-type(odd) th.dark-left-header {
+    background-color: #333;
+    color: #eee;
+    text-align: left;
+    z-index: 1;
+    transition: background-color color 0.2s linear;
+  }
+
+  .responsive-table tbody tr:nth-last-of-type(even) th.dark-left-header {
+    background-color: #222;
+    color: #eee;
+    transition: background-color color 0.2s linear;
+  }
+}
